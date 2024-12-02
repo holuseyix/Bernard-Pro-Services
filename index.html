@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bernard Pro Services</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Bernard Pro Services</h1>
+      <p>Your ultimate destination for phones and accessories!</p>
+      <div class="cta-buttons">
+        <a href="javascript:void(0);" class="btn" id="shopBtn">Shop Now</a>
+        <a href="#contact" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Categories Slide-in Menu -->
+<div class="shop-menu" id="shopMenu">
+    <div class="shop-category" id="phonesLink">
+      <i class="fas fa-mobile-alt"></i>
+      <span>Phones</span>
+    </div>
+  
+    <!-- Phone Brands (Initially hidden) -->
+    <div class="phone-brands" id="phoneBrands" style="display: none;">
+      <h3>Phone Brands</h3>
+      <div class="brands">
+        <a href="tecno.html" class="brand">Tecno</a>
+        <a href="itel.html" class="brand">Itel</a>
+        <a href="redmi.html" class="brand">Redmi</a>
+        <a href="iphone.html" class="brand">iPhone</a>
+        <a href="samsung.html" class="brand">Samsung</a>
+        <a href="realme.html" class="brand">Realme</a>
+        <a href="Infinix.html" class="brand">Infinix</a>
+        <a href="others.html" class="brand">Others</a>
+      </div>
+    </div>
+  
+    <!-- Other Shop Categories (unchanged) -->
+    <div class="shop-category">
+      <i class="fas fa-tablet-alt"></i>
+      <span>Tablets</span>
+    </div>
+    <div class="shop-category">
+      <i class="fas fa-plug"></i>
+      <span>Chargers</span>
+    </div>
+    <div class="shop-category">
+      <i class="fas fa-watch"></i>
+      <span>Smart Watch</span>
+    </div>
+    <div class="shop-category">
+      <i class="fas fa-headphones-alt"></i>
+      <span>Headphones</span>
+    </div>
+    <div class="shop-category">
+      <i class="fas fa-music"></i>
+      <span>MP3</span>
+    </div>
+    <div class="shop-category">
+      <i class="fas fa-bag"></i>
+      <span>Pouch</span>
+    </div>
+  </div>
+<!-- Floating Cart Icon -->
+<div class="cart-icon" id="cartIcon">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cartCount">0</span> <!-- Cart count -->
+  </div>
+  
+  <!-- Cart Sidebar (Initially hidden) -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" class="close-btn">X</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will appear here -->
+      <p>No items in the cart</p>
+    </div>
+    <div class="cart-footer">
+      <p>Total: <span id="totalPrice">$0</span></p>
+      <button class="btn">Checkout</button>
+    </div>
+  </div>
+    
+  <!-- Bottom Navigation Bar -->
+  <div class="navbar">
+    <a href="#home">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="javascript:void(0);" id="shopLink">
+      <i class="fas fa-shopping-cart"></i>
+      <span>Shop</span>
+    </a>
+    <a href="#about">
+      <i class="fas fa-info-circle"></i>
+      <span>About</span>
+    </a>
+    <a href="#contact">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

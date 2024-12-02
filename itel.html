@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecno Phones</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Tecno Products Section -->
+  <section class="products">
+    <section class="products">
+        <!-- <h1>Tecno Phones</h1> -->
+        <div class="product-list">
+          <div class="product-item">
+            <img src="images/tecno-phone1.jpg" alt="Tecno Phone 1">
+            <h3>Itel S25</h3>
+            <p>Price: $150</p>
+            <button class="btn" onclick="addToCart({name: 'Tecno Spark 8', price: 150})">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="images/tecno-phone1.jpg" alt="Tecno Phone 1">
+            <h3>Itel P65</h3>
+            <p>Price: $150</p>
+            <button class="btn" onclick="addToCart({name: 'Tecno Spark 8', price: 150})">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="images/tecno-phone2.jpg" alt="Tecno Phone 2">
+            <h3>Itel A70</h3>
+            <p>Price: $220</p>
+            <button class="btn" onclick="addToCart({name: 'Tecno Camon 18', price: 220})">Add to Cart</button>
+          </div>
+      
+          <!-- Add more products here with the same structure -->
+      
+        </div>
+      </section>
+      
+  </section>
+  <!-- Floating Cart Icon -->
+<div class="cart-icon" id="cartIcon">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cartCount">0</span> <!-- Cart count -->
+</div>
+
+<!-- Cart Sidebar (Initially hidden) -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="closeCart" class="close-btn">X</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <!-- Cart items will appear here -->
+    <p>No items in the cart</p>
+  </div>
+  <div class="cart-footer">
+    <p>Total: <span id="totalPrice">$0</span></p>
+    <button class="btn">Checkout</button>
+  </div>
+</div>
+<!-- Floating Cart Icon -->
+<div class="cart-icon" id="cartIcon">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cartCount">0</span> <!-- Cart count -->
+</div>
+
+<!-- Cart Sidebar (Initially hidden) -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="closeCart" class="close-btn">X</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <!-- Cart items will appear here -->
+    <p>No items in the cart</p>
+  </div>
+  <div class="cart-footer">
+    <p>Total: <span id="totalPrice">$0</span></p>
+    <button class="btn">Checkout</button>
+  </div>
+</div>
+
+  <!-- Bottom Navigation Bar (same as the one on the main page) -->
+  <div class="navbar">
+    <a href="index.html">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="javascript:void(0);" id="shopLink">
+      <i class="fas fa-shopping-cart"></i>
+      <span>Shop</span>
+    </a>
+    <a href="#about">
+      <i class="fas fa-info-circle"></i>
+      <span>About</span>
+    </a>
+    <a href="#contact">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
